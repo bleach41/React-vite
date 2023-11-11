@@ -1,0 +1,25 @@
+main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    width: 30%;
+    margin: 20px;
+    background-color: rgb(81, 112, 112);
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.card h1 {
+    color: black
+}
+
+img {
+    width: 100%;
+}

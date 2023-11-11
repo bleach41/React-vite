@@ -1,0 +1,30 @@
+.reyes {
+  margin-bottom: 15px;
+  padding: 10px;
+
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.rojo {
+  color: red;
+}
+
+.caja {
+  margin-left: 15px;
+}
+
+.votos {
+  user-select: none;
+  font-size: 2em;
+}
