@@ -6,21 +6,20 @@ function Banderas() {
 
     const { alumno } = useContext(Context2)
     const { setAlumno } = useContext(Context2)
+    const sustitucion = (sustitucion) => {
+        setAlumno(
+            alumno.map((dato, index) => index == 3 ? { ...dato, idioma: sustitucion } : { ...dato })
+        )
+    }
 
     const cambio = () => {
-        setAlumno(
-            alumno.map((dato, index) => index == 3 ? { ...dato, idioma: 0 } : { ...dato })
-        )
+        sustitucion(0)
     }
     const cambio1 = () => {
-        setAlumno(
-            alumno.map((dato, index) => index == 3 ? { ...dato, idioma: 1 } : { ...dato })
-        )
+        sustitucion(1)
     }
     const cambio2 = () => {
-        setAlumno(
-            alumno.map((dato, index) => index == 3 ? { ...dato, idioma: 2 } : { ...dato })
-        )
+        sustitucion(2)
     }
     return (
         <>
